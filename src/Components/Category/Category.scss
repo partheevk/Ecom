@@ -1,0 +1,44 @@
+.category{
+    width:32%;
+    aspect-ratio: 16/9;
+    background-image: url(../../assests/poster.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+
+    .cat-content{
+        height:100%;
+        background-color: rgba($color: #000000, $alpha: 0.25);
+        transition: 0.2s ease;
+        
+        
+
+        .heading{
+            
+            color:white;
+            opacity: 0.75;
+        }
+
+        &:hover{
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            
+            .heading{
+                opacity: 2;
+                font-size: 1.5rem;
+                transition: 0.75s ease;
+            }
+        }
+
+    }
+}
+@media screen and (max-width:760px){
+    .category{
+        width:48%;
+    }
+}
+@media screen and (max-width:480px){
+    .category{
+        width:100%;
+    }
+}
